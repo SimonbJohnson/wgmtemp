@@ -1,12 +1,16 @@
-function generateOrientationBefore(id,data,columns,rows,state,details,animate){
+function generateOrientationBefore(id,data,columns,rows,state,details,animate,all){
 
     let width = $(id).width();
-    let scale = width/5;
+    let scale = width/columns;
+
+    if(all==true){
+      id = id+'all';
+    }
 
     let svg = d3.select(id)
             .append("svg")
             .attr("width", scale*columns)
-            .attr("height", scale*9);
+            .attr("height", scale*rows);
 
     svg.selectAll(".circle1")
       .data(data)
@@ -337,21 +341,21 @@ function generateOrientationAfter(id,data,columns,rows,state,details,animate){
             if(topWin>topElement-100){*/
                 plungeCircles
                     .transition()
-                    .delay(2000)
+                    .delay(1000)
                     .ease(d3.easeCubic)
                     .duration(500)
                     .attr("cy",function(d,i) { return (i % rows)*scale + scale*0.4 + d['B-Q30-religion-Q12 high']*scale; });
 
                 plungeLines1
                     .transition()
-                    .delay(2000)
+                    .delay(1000)
                     .ease(d3.easeCubic)
                     .duration(500)
                     .attr("y2",function(d,i) { return (i % rows)*scale + scale*0.4 + d['B-Q30-religion-Q12 high']*scale; });
 
                 plungeLines2
                     .transition()
-                    .delay(2000)
+                    .delay(1000)
                     .ease(d3.easeCubic)
                     .duration(500)
                     .attr("y2",function(d,i) { return (i % rows)*scale + scale*0.4 + d['B-Q30-religion-Q12 high']*scale; });
