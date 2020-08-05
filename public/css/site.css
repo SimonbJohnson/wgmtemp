@@ -1,0 +1,341 @@
+:root {
+	--baseColor: #FFFCF8;
+	--highlightColor: #EC411B;
+	--mainDark: #3F1A13;
+}
+
+body {
+	background: var(--baseColor);
+	font-family:arial;
+	color: var(--mainDark);
+}
+
+p {
+	font-size:1.1rem;
+}
+
+#main {
+	padding: 1rem;
+}
+
+.navbar {
+	padding: .5rem 1rem;
+	background: var(--baseColor);
+}
+
+.navbar a {
+	color:white;
+}
+
+.highlightbox {
+	border-width:1px;
+	border-color:var(--highlightColor);
+	border-style:solid;
+	padding:1.4rem;
+	text-align:center;
+}
+
+h1 {
+	font-size:3rem;
+	line-height:1.1;
+	text-align:center;
+	font-weight:600;
+	font-family:wellcome;
+}
+
+h2 {
+	font-size:1rem;
+	text-align:center;
+}
+
+#tagline {
+	border-bottom-width:1px;
+	border-bottom-color:var(--highlightColor);
+	border-bottom-style:solid;
+	padding-bottom:20px;
+}
+
+#taglineContainer {
+	padding:40px;
+}
+
+.maintext {
+	font-size:1.4rem;
+	font-family:arial;
+	font-weight:600;
+	text-align:center;
+}
+
+.summarytext {
+	font-size:1.2rem;
+	font-family:arial;
+	font-weight:600;
+	text-align:center;
+}
+
+.subtext {
+	font-size:1.2rem;
+	font-weight:600;
+}
+
+.takeawaytext {
+	font-size:1.4rem;
+	font-weight:600;
+	text-align:center;
+}
+
+.storysection {
+	margin-top:60px;
+}
+
+.storysectionlarge {
+	margin-top:300px;
+	margin-bottom:300px;
+}
+
+.countrylabel {
+	font-size:0.5rem;
+}
+
+.countrylabellarge {
+	font-size:0.8rem;
+}
+
+.countrylargelabel {
+	font-size:0.8rem;
+}
+
+.percentlabel {
+	font-size:0.7rem;
+}
+
+.keylabel {
+	font-size:0.8em;
+}
+
+.caption {
+	font-size:0.8em;
+}
+
+.key {
+	width:12px;
+	height:12px;
+	float: left;
+	margin-right:12px;
+	margin-top:3px;
+	text-transform: uppercase;
+}
+
+.lowincome {
+	background-color:#FF0000;
+}
+
+.lowermiddleincome {
+	background-color:#00B3CC;
+}
+
+.uppermiddleincome {
+	background-color:#FFC500;
+}
+
+.highincome {
+	background-color:#3F1A13;
+}
+
+.callout {
+	background-color:white;
+	padding-top:20px;
+	border-width:1px;
+	border-color:var(--mainDark);
+	border-style:solid;
+	width:100%;
+	height:100%;
+}
+
+.inner {
+	padding:20px;
+}
+
+.fronttitle {
+	text-align:center;
+	font-size:2.0rem;
+	font-weight:600;
+	margin-top:20px;
+}
+
+.frontintro {
+	text-align:center;
+	margin-top:20px;
+	font-size:1.2rem;
+}
+
+.orientation {
+	background-color:#F6B7B2;
+}
+
+.diffusion {
+	background-color:#E5DAD4
+}
+
+.distance {
+	background-color:#B7DADE;
+}
+
+.attraction {
+	background-color:#D3B9C7;
+}
+
+.chartlegend {
+  width:12px;
+  height:12px;
+  float: left;
+  margin-right:12px;
+  margin-top:3px;
+  text-transform: uppercase;
+}
+
+.chartaxislabel {
+	font-size:12px;
+}
+
+.instanceicon {
+	margin-top:-20%;
+}
+
+.storycase {
+	border-top-style:solid;
+	border-top-width:10px;
+	border-top-width:#000000;
+	padding:30px;
+	padding-top:30px;
+	z-index:10;
+}
+
+.storycaseparent {
+	z-index:10;
+}
+
+.simplifiedicon {
+	min-height:70px;
+	width:60px;
+}
+
+.typeicon {
+	min-height:70px;
+	width:40px;
+}
+
+.sectionheader {
+	color:#ffffff;
+	background-color:var(--mainDark);
+	font-weight:500;
+	height:45px;
+	padding-top:20px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:15px;
+    margin-top:30px;
+}
+
+.center-text {
+	justify-content: center;
+	text-align:center;
+}
+
+.lensbox {
+	border-bottom-style:solid;
+	border-bottom-width:10px;
+	border-bottom-color:#E8A8A2;
+	padding:15px;
+	padding-top:20px;
+	margin-top:30px;
+}
+
+.orientationcolor {
+	border-bottom-color:#E8A8A2;
+}
+
+.diffusioncolor {
+	border-bottom-color:#E5DAD4;
+}
+
+.distancecolor {
+	border-bottom-color:#D3B9C7;
+}
+
+.attractioncolor {
+	border-bottom-color:#B7DADE;
+}
+
+.smallhighlight {
+	font-size:0.8em;
+	font-weight:bold;
+}
+
+.seeingfurthernote {
+	margin-top:30px;
+}
+
+.homeicon {
+	margin-bottom:15px;
+}
+
+.notvisible {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.homelink a {
+	color:#777777
+}
+
+.orientationtitlebox {
+	background-color:#f5d9d6;
+	padding-top:15px;
+	margin-bottom:15px;
+	text-align:center;
+}
+
+.diffusiontitlebox {
+	background-color:#E5DAD4;
+	padding-top:15px;
+	margin-bottom:15px;
+	text-align:center;
+}
+
+.distancetitlebox {
+	background-color:#D3B9C7;
+	padding-top:15px;
+	margin-bottom:15px;
+	text-align:center;
+}
+.attractiontitlebox {
+	background-color:#B7DADE;
+	padding-top:15px;
+	margin-bottom:15px;
+	padding-left:0px;
+	text-align:center;
+}
+
+.lensbutton {
+	border-style:solid;
+	border-width:1px;
+	border-color:var(--highlightColor);
+	padding-top:15px;
+	cursor:pointer;
+}
+
+.legend {
+	padding-top:30px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index:-10;	
+}
+
+.screenpad {
+	padding-top:1000px;
+}
