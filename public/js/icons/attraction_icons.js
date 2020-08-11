@@ -1,5 +1,4 @@
 function generateAttraction(id,data,rows,columns,state,details,animate) {
-    console.log(id)
     let width = $(id).width();
     let scale = width/columns;
 
@@ -10,7 +9,6 @@ function generateAttraction(id,data,rows,columns,state,details,animate) {
 
     let aSize = scale/15
     let shortid = id.substr(1);
-    console.log(shortid);
     let markerend = svg
       .append('defs')
       .append('marker')
@@ -283,10 +281,14 @@ function generateAttraction(id,data,rows,columns,state,details,animate) {
       duration = 750
     }
     let init=false;
-    let topElement = $(id).offset().top;
+    
     $(window).scroll(function(){
         if(!init){
             let topWin = $(window).scrollTop();
+            let topElement = $(id).offset().top;
+            if(id=='#viz6'){
+              console.log('win: '+topWin+' element: '+topElement);
+            }
             if(topWin>topElement-150 || duration==0){
               init=true;
               if(state==1){

@@ -95,3 +95,34 @@ $('#viz2switch').on('click',function(d){
 	$('#viz2all').toggle();
 	$('#viz2few').toggle();
 });
+
+sticky = false
+$(window).scroll(function(){
+    if(!sticky){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#stickyend').offset().top;
+        let height = $(window).height();
+        if(topWin>topElement-height){
+        	$('#attractionchallenge1').fadeOut();
+        	$('#attractionchallenge2').fadeOut();
+        	$('#attractionchallenge3').fadeOut();
+        	sticky=true;
+        }
+    }
+    if(sticky){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#stickyend').offset().top;
+        let height = $(window).height();
+        if(topWin<topElement-height){
+        	$('#attractionchallenge1').fadeIn();
+        	$('#attractionchallenge2').fadeIn();
+        	$('#attractionchallenge3').fadeIn();
+        	sticky=false;
+        }
+    }
+});
+
+$('.proportional').each(function() {
+	let width = $(this).width();
+    $(this).height(width);
+});
