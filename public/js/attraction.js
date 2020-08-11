@@ -9,9 +9,9 @@ let newData = data.sort(function(a,b){
   return a.position - b.position;
 });*/
 
-newData = example3(sortByAlpha(byIncomeGroup(attractionData,1),'country_name'));
+newData = filterForIDs(byIncomeGroup(attractionData,1),[100,103]);
 generateAttraction('#viz1afew',newData,2,1,1,false,true);
-newData = example3(sortByAlpha(byIncomeGroup(attractionData,2),'country_name'));
+newData = filterForIDs(byIncomeGroup(attractionData,2),[96,67]);
 generateAttraction('#viz1bfew',newData,2,1,1,false,true);
 newData = example3(sortByAlpha(byIncomeGroup(attractionData,3),'country_name'));
 generateAttraction('#viz1cfew',newData,2,1,1,false,true);
@@ -19,16 +19,16 @@ newData = example3(sortByAlpha(byIncomeGroup(attractionData,4),'country_name'));
 generateAttraction('#viz1dfew',newData,2,1,1,false,true);
 
 newData = sortByAlpha(byIncomeGroup(attractionData,1),'country_name');
-generateAttraction('#viz1a',newData,9,5,1,false,true);
+generateAttraction('#viz1a',newData,9,5,1,false,false);
 newData = sortByAlpha(byIncomeGroup(attractionData,2),'country_name');
-generateAttraction('#viz1b',newData,9,5,1,false,true);
+generateAttraction('#viz1b',newData,9,5,1,false,false);
 newData = sortByAlpha(byIncomeGroup(attractionData,3),'country_name');
-generateAttraction('#viz1c',newData,9,5,1,false,true);
+generateAttraction('#viz1c',newData,9,5,1,false,false);
 newData = sortByAlpha(byIncomeGroup(attractionData,4),'country_name');
-generateAttraction('#viz1d',newData,9,5,1,false,true);
+generateAttraction('#viz1d',newData,9,5,1,false,false);
 $('#viz1all').hide();
 
-newData = example3(sortByAlpha(byIncomeGroup(attractionData,1),'country_name'));
+newData = filterForIDs(byIncomeGroup(attractionData,1),[100,103]);
 generateAttraction('#viz2afew',newData,2,1,2,false,true);
 newData = example3(sortByAlpha(byIncomeGroup(attractionData,2),'country_name'));
 generateAttraction('#viz2bfew',newData,2,1,2,false,true);
@@ -38,13 +38,13 @@ newData = example3(sortByAlpha(byIncomeGroup(attractionData,4),'country_name'));
 generateAttraction('#viz2dfew',newData,2,1,2,false,true);
 
 newData = sortByAlpha(byIncomeGroup(attractionData,1),'country_name');
-generateAttraction('#viz2a',newData,9,5,2,false,true);
+generateAttraction('#viz2a',newData,9,5,2,false,false);
 newData = sortByAlpha(byIncomeGroup(attractionData,2),'country_name');
-generateAttraction('#viz2b',newData,9,5,2,false,true);
+generateAttraction('#viz2b',newData,9,5,2,false,false);
 newData = sortByAlpha(byIncomeGroup(attractionData,3),'country_name');
-generateAttraction('#viz2c',newData,9,5,2,false,true);
+generateAttraction('#viz2c',newData,9,5,2,false,false);
 newData = sortByAlpha(byIncomeGroup(attractionData,4),'country_name');
-generateAttraction('#viz2d',newData,9,5,2,false,true);
+generateAttraction('#viz2d',newData,9,5,2,false,false);
 
 $('#viz2all').hide();
 
@@ -74,6 +74,15 @@ newData = attractionData.sort(function(a,b){
 
 generateScaleArrow('#scale6','Low HDI','High HDI');
 generateAttraction('#viz6',newData,8,18,6,false,true);
+
+newData = attractionData.filter(function(d){
+	if(d['country_id'] ==31){
+		return true
+	} else {
+		return false
+	}
+});
+generateAttraction('#viz7',newData,1,1,6,true,false);
 
 $('#viz1switch').on('click',function(d){
 	console.log('click');

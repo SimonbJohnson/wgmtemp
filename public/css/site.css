@@ -6,6 +6,7 @@
 	--diffusion: #E5DAD4;
 	--distance: #D3B9C7;
 	--attraction: #B7DADE;
+	--attractionlight:#dbecee;
 }
 
 html {
@@ -114,6 +115,64 @@ p {
 	font-size:9px;
 }
 
+.countrylabel {
+	font-size:0.5rem;
+	color:#777777;
+	fill:#999999;
+}
+
+.countrylabellarge {
+	font-size:0.8rem;
+}
+
+.countrylargelabel {
+	font-size:0.8rem;
+}
+
+.percentlabel {
+	font-size:0.7rem;
+}
+
+.keylabel {
+	font-size:0.8em;
+}
+
+.lowincome {
+	background-color:#FF0000;
+}
+
+.lowermiddleincome {
+	background-color:#00B3CC;
+}
+
+.uppermiddleincome {
+	background-color:#FFC500;
+}
+
+.highincome {
+	background-color:#3F1A13;
+}
+
+.orientation {
+	background-color:#F6B7B2;
+}
+
+.diffusion {
+	background-color:#E5DAD4
+}
+
+.distance {
+	background-color:var(--distance);
+}
+
+.attraction {
+	background-color:#B7DADE;
+}
+
+.attractionlight {
+	background-color:var(--attractionlight);
+}
+
 /* old styling */
 
 
@@ -175,26 +234,6 @@ p {
 	margin-bottom:300px;
 }
 
-.countrylabel {
-	font-size:0.5rem;
-}
-
-.countrylabellarge {
-	font-size:0.8rem;
-}
-
-.countrylargelabel {
-	font-size:0.8rem;
-}
-
-.percentlabel {
-	font-size:0.7rem;
-}
-
-.keylabel {
-	font-size:0.8em;
-}
-
 .caption {
 	font-size:0.8em;
 }
@@ -206,22 +245,6 @@ p {
 	margin-right:12px;
 	margin-top:3px;
 	text-transform: uppercase;
-}
-
-.lowincome {
-	background-color:#FF0000;
-}
-
-.lowermiddleincome {
-	background-color:#00B3CC;
-}
-
-.uppermiddleincome {
-	background-color:#FFC500;
-}
-
-.highincome {
-	background-color:#3F1A13;
 }
 
 .callout {
@@ -249,22 +272,6 @@ p {
 	text-align:center;
 	margin-top:20px;
 	font-size:1.2rem;
-}
-
-.orientation {
-	background-color:#F6B7B2;
-}
-
-.diffusion {
-	background-color:#E5DAD4
-}
-
-.distance {
-	background-color:var(--distance);
-}
-
-.attraction {
-	background-color:#B7DADE;
 }
 
 .chartlegend {

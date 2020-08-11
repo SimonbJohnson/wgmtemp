@@ -33,13 +33,13 @@ function generateAttraction(id,data,rows,columns,state,details,animate) {
         .attr("x1",function(d,i) { return Math.floor(i / rows) * scale + scale*0.4 })
         .attr("y1",function(d,i) {
           if(state==1){
-            return (i % rows) * scale + scale*0.8
+            return (i % rows) * scale + scale*0.7
           } else {
             return (i % rows) * scale + scale*0.8-d['q13 - A lot, Some']*scale/200
           }
         })
         .attr("x2",function(d,i) { return Math.floor(i / rows) * scale + scale*0.4 })
-        .attr("y2",function(d,i) { return (i % rows)*scale + scale*0.8; })
+        .attr("y2",function(d,i) { return (i % rows)*scale + scale*0.7; })
         .attr("stroke","#3F1A13")
         .attr("stroke-width",1.5);
 
@@ -260,10 +260,16 @@ function generateAttraction(id,data,rows,columns,state,details,animate) {
       }
     }
 
-    svg.selectAll("text")
+    svg.selectAll("textlabels")
       .data(data)
     .enter().append("text")
-      .attr('class','countrylabel')
+      .attr('class',function(d){
+        if(details==true){
+          return 'countrylargelabel'
+        } else {
+          return 'countrylabel'
+        }
+      })
       .attr("x",function(d,i) { return Math.floor(i / rows) * scale + scale*0.5 })
       .attr("y",function(d,i) { return (i % rows)*scale + scale*0.9; })
       .style("text-anchor", "middle")
