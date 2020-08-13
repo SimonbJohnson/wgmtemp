@@ -188,6 +188,39 @@ p {
 	background-color:var(--attractionlight);
 }
 
+.reference {
+	vertical-align: super;
+	font-size:8px;
+}
+
+.footnote {
+	font-size:8px;
+	text-align:left;
+}
+
+.footnotecontainer {
+	padding-top:15px;
+}
+
+.footnotecontainer:after {
+  content: "";
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 10%;
+  text-align:left;
+}
+
+.white {
+	color:#fff;
+	padding-left:15px;
+}
+
+.marginup {
+	margin-top:-40px;
+}
 /* old styling */
 
 

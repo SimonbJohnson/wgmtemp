@@ -18,6 +18,10 @@
 	z-index:-10;
 }
 
+#religionicon {
+	transform:translateY(-200%);
+}
+
 #frontsociety {
 	background-image:url("../images/frontpage/Societal_Home_photo-1512025459928-92cefb597d90.jpg");
   	background-size: cover;
@@ -35,6 +39,15 @@
 	transform:translateY(-20%);
 	z-index:-10;
 }
+
+#societyicon {
+	transform:translate(-20%,-375%);
+}
+
+#futureicon {
+	transform:translate(50%,-450%);
+}
+
 
 #frontbenefits {
 	background-image:url("../images/frontpage/Benefits_Home_Feature2.jpg");

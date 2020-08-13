@@ -178,7 +178,7 @@ function generateAttraction(id,data,rows,columns,state,details,animate) {
           .enter().append("circle")
             .attr("class", "circle")
             .attr("cx", function(d,i) { return Math.floor(i / rows) * scale + scale*0.15 })
-            .attr("cy", function(d,i) { return (i % 9)*scale + scale*0.6 })
+            .attr("cy", function(d,i) { return (i % rows)*scale + scale*0.6 })
             .attr("r", function(d){ return Math.sqrt(d['agriculture'])/100*scale})
             .attr("fill","#b1cc92")
             .attr('opacity',0);
@@ -286,9 +286,6 @@ function generateAttraction(id,data,rows,columns,state,details,animate) {
         if(!init){
             let topWin = $(window).scrollTop();
             let topElement = $(id).offset().top;
-            if(id=='#viz6'){
-              console.log('win: '+topWin+' element: '+topElement);
-            }
             if(topWin>topElement-150 || duration==0){
               init=true;
               if(state==1){

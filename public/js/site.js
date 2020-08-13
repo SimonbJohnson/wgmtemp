@@ -362,3 +362,14 @@ function filterForIDs(list,IDs){
 
 
 }*/
+
+function decimate(list){
+    newList = list.filter(function(d,i){
+        if(i % 10  ==0){
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newList;
+}

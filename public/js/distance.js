@@ -22,3 +22,12 @@ newData = sortByAlpha(byIncomeGroup(distanceData,1));
 generateDistance('#viz4a',newData,6,8,3);
 newData = sortByAlpha(byIncomeGroup(distanceData,4));
 generateDistance('#viz4b',newData,6,8,3);
+
+malawi = distanceData.filter(function(d){
+	if(d.country_id==44){
+		return true;
+	} else {
+		return false;
+	}
+});
+generateDistance('#viz5',malawi,1,1,3,true);

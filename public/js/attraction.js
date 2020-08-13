@@ -55,7 +55,13 @@ newData = attractionData.sort(function(a,b){
 //generateAttraction('#viz3',newData,9,16,3);
 
 generateScaleArrow('#scale4','Low HDI','High HDI');
+
+decData = decimate(newData);
+decData.shift();
+generateAttraction('#viz4few',decData,2,7,4,false,true);
 generateAttraction('#viz4',newData,8,18,4,false,true);
+
+$('#viz4').hide();
 
 attractionData.forEach(function(d){
   d.position = d['industry']*1+d['services']*2
@@ -66,14 +72,26 @@ newData = attractionData.sort(function(a,b){
 });
 
 generateScaleArrow('#scale5','Agriculture','Serivces');
+
+decData = decimate(newData);
+decData.shift();
+generateAttraction('#viz5few',decData,2,7,5,false,true);
 generateAttraction('#viz5',newData,8,18,5,false,true);
+
+$('#viz5').hide();
 
 newData = attractionData.sort(function(a,b){
   return a['HDI'] - b['HDI'];
 });
 
 generateScaleArrow('#scale6','Low HDI','High HDI');
+
+decData = decimate(newData);
+decData.shift();
+generateAttraction('#viz6few',decData,2,7,6,false,true);
 generateAttraction('#viz6',newData,8,18,6,false,true);
+
+$('#viz6').hide();
 
 newData = attractionData.filter(function(d){
 	if(d['country_id'] ==31){
@@ -85,15 +103,28 @@ newData = attractionData.filter(function(d){
 generateAttraction('#viz7',newData,1,1,6,true,false);
 
 $('#viz1switch').on('click',function(d){
-	console.log('click');
 	$('#viz1all').toggle();
 	$('#viz1few').toggle();
 });
 
 $('#viz2switch').on('click',function(d){
-	console.log('click');
 	$('#viz2all').toggle();
 	$('#viz2few').toggle();
+});
+
+$('#viz4switch').on('click',function(d){
+	$('#viz4').toggle();
+	$('#viz4few').toggle();
+});
+
+$('#viz5switch').on('click',function(d){
+	$('#viz5').toggle();
+	$('#viz5few').toggle();
+});
+
+$('#viz6switch').on('click',function(d){
+	$('#viz6').toggle();
+	$('#viz6few').toggle();
 });
 
 sticky = false
