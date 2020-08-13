@@ -100,7 +100,7 @@ newData = attractionData.filter(function(d){
 		return false
 	}
 });
-generateAttraction('#viz7',newData,1,1,6,true,false);
+generateAttraction('#viz7',newData,1,1,5,false,false);
 
 $('#viz1switch').on('click',function(d){
 	$('#viz1all').toggle();
