@@ -15,13 +15,13 @@ generateDistance('#viz2dfew',newData,2,1,1,false,true);
 
 
 newData = sortByAlpha(byIncomeGroup(distanceData,1));
-generateDistance('#viz2a',newData,9,5,1);
+generateDistance('#viz2a',newData,9,5,1,false,false);
 newData = sortByAlpha(byIncomeGroup(distanceData,2));
-generateDistance('#viz2b',newData,9,5,1);
+generateDistance('#viz2b',newData,9,5,1,false,false);
 newData = sortByAlpha(byIncomeGroup(distanceData,3));
-generateDistance('#viz2c',newData,9,5,1);
+generateDistance('#viz2c',newData,9,5,1,false,false);
 newData = sortByAlpha(byIncomeGroup(distanceData,4));
-generateDistance('#viz2d',newData,9,5,1);
+generateDistance('#viz2d',newData,9,5,1,false,false);
 
 $('#viz2all').hide();
 
@@ -59,6 +59,9 @@ generateDistance('#viz6b',rightData,1,6,4,false,true);
 southAfrica =  filterForIDs(distanceData,[45]);
 generateDistance('#viz7',southAfrica,1,1,4,true,false);
 
+kenya =  filterForIDs(distanceData,[36]);
+generateDistance('#viz8',kenya,1,1,4,true,false);
+
 $('.proportional').each(function() {
 	let width = $(this).width();
     $(this).height(width);
@@ -82,6 +85,100 @@ $(window).scroll(function(){
         if(topWin<topElement-height){
         	$('#bangladesh2').fadeIn();
         	sticky1=false;
+        }
+    }
+});
+
+sticky2 = false
+$(window).scroll(function(){
+    if(!sticky2){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky2end').offset().top;
+        let height = $(window).height();
+        if(topWin>topElement-height){
+        	$('#benefits3').fadeOut();
+        	sticky2=true;
+        }
+    }
+    if(sticky2){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky2end').offset().top;
+        let height = $(window).height();
+        if(topWin<topElement-height){
+        	$('#benefits3').fadeIn();
+        	sticky2=false;
+        }
+    }
+});
+
+/*
+sticky3 = false
+$(window).scroll(function(){
+    if(!sticky3){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky3end').offset().top;
+        let height = $(window).height();
+        if(topWin>topElement-height){
+        	$('#benefits4').fadeOut();
+        	sticky3=true;
+        }
+    }
+    if(sticky3){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky3end').offset().top;
+        let height = $(window).height();
+        if(topWin<topElement-height){
+        	$('#benefits4').fadeIn();
+        	sticky3=false;
+        }
+    }
+});
+
+sticky4 = false
+$(window).scroll(function(){
+    if(!sticky4){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky4end').offset().top;
+        let height = $(window).height();
+        if(topWin>topElement-height){
+        	$('#benefits5').fadeOut();
+        	sticky4=true;
+        }
+    }
+    if(sticky4){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky4end').offset().top;
+        let height = $(window).height();
+        if(topWin<topElement-height){
+        	$('#benefits5').fadeIn();
+        	sticky4=false;
+        }
+    }
+});
+*/
+sticky5 = false
+$(window).scroll(function(){
+    if(!sticky5){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky5end').offset().top;
+        let height = $(window).height();
+        if(topWin>topElement-height){
+        	$('#benefits4').fadeOut();
+        	$('#benefits5').fadeOut();
+        	$('#benefits6').fadeOut();
+        	sticky5=true;
+        }
+    }
+    if(sticky5){
+        let topWin = $(window).scrollTop();
+        let topElement = $('#sticky5end').offset().top;
+        let height = $(window).height();
+        if(topWin<topElement-height){
+        	$('#benefits4').fadeIn();
+        	$('#benefits5').fadeIn();
+        	$('#benefits6').fadeIn();
+        	
+        	sticky5=false;
         }
     }
 });

@@ -47,9 +47,6 @@ p {
 	font-size:1rem;
 }
 
-.footnote {
-	font-size:0.5rem;
-}
 
 .leftalign {
 	text-align:left;
@@ -202,6 +199,11 @@ p {
 .footnote {
 	font-size:8px;
 	text-align:left;
+	margin-bottom:0.2rem;
+}
+
+.footnote a {
+	color:black;
 }
 
 .footnotecontainer {
