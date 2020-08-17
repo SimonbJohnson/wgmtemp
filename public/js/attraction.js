@@ -102,6 +102,15 @@ newData = attractionData.filter(function(d){
 });
 generateAttraction('#viz7',newData,1,1,5,false,false);
 
+newData = attractionData.filter(function(d){
+  if(d['country_id'] ==11){
+    return true
+  } else {
+    return false
+  }
+});
+generateAttraction('#viz8',newData,1,1,5,false,false);
+
 $('#viz1switch').on('click',function(d){
 	$('#viz1all').toggle();
 	$('#viz1few').toggle();

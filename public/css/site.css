@@ -5,6 +5,7 @@
 	--orientation: #F6B7B2;
 	--diffusion: #E5DAD4;
 	--distance: #D3B9C7;
+	--distancelight: #e9dadf;
 	--attraction: #B7DADE;
 	--attractionlight:#dbecee;
 }
@@ -66,8 +67,8 @@ p {
 }
 
 .fullscreensection {
-	margin-top:40px;
-	margin-bottom:40px;
+	margin-top:1px;
+	margin-bottom:1px;
 	padding-bottom: 45vh;
 	padding-top:45vh;
 	background-position: center;
@@ -180,6 +181,11 @@ p {
 	background-color:var(--distance);
 }
 
+.distancelight {
+	background-color:var(--distancelight);
+}
+
+
 .attraction {
 	background-color:#B7DADE;
 }
@@ -221,14 +227,12 @@ p {
 .marginup {
 	margin-top:-40px;
 }
+
+.storysectionlarge {
+	margin-top:300px;
+}
 /* old styling */
 
-
-
-
-#main {
-	padding: 1rem;
-}
 
 .navbar {
 	padding: .5rem 1rem;
@@ -275,11 +279,6 @@ p {
 	font-size:1.4rem;
 	font-weight:600;
 	text-align:center;
-}
-
-.storysectionlarge {
-	margin-top:300px;
-	margin-bottom:300px;
 }
 
 .caption {
