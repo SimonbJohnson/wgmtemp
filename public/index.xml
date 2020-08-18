@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>About</title>
+      <link>https://simonbjohnson.github.io/wgmtemp/public/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simonbjohnson.github.io/wgmtemp/public/about/</guid>
+      <description>Going deeper Seeing further
+  About
+  Hetco was commissioned by the Public Engagement department at Wellcome Trust to conduct a research review project, that enhances the findings of the first Wellcome Global Monitor 2018 to reveal and prompt meaningful opportunities for research for teams within Wellcome. We identified patterns within the dataset, and worked with Studio Ala and Smithery to help communicate the complexity of the findings.</description>
+    </item>
+    
+    <item>
       <title>Attraction</title>
       <link>https://simonbjohnson.github.io/wgmtemp/public/lenses/future_economies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -36,16 +47,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://simonbjohnson.github.io/wgmtemp/public/compare/</guid>
-      <description>Compare the lenses   Use this tool to:
-  1 Compare the four lenses of trust across relevant countries
- 2 Select a lens that looks important for your work
- 3 Plan how to take it into account in your project
-    1 Compare the four lenses of trust across relevant countries
+      <description>Going deeper Seeing further
+  Compare the lenses
+  Use this tool to compare the four lenses of trust across relevant countries, idenitfy which lense is most relevant to your work and plan how to take it into account in your project.
   COUNTRIES
  RELIGION
  SOCIETAL INSTITUTIONS
  BENEFITS
- FUTURE ECONOMIES</description>
+ FUTURE ECONOMIES
+                        Add more rows  Eastern Africa Central Africa North Africa Southern Africa Western Africa Central America and Mexico Northern America South America Central Asia East Asia Southeast Asia South Asia Middle East Eastern Europe Northern Europe Southern Europe Western Europe Aus/NZ  Add Region     Religion 	   Societal Institutions     Benefits 	   Future Economies 	  Where might people turn when there is a difference of opinion between religion and science?</description>
     </item>
     
     <item>

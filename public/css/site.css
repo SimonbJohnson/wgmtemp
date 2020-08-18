@@ -233,6 +233,30 @@ p {
 .storysectionlarge {
 	margin-top:300px;
 }
+
+.topalign {
+	vertical-align:top;
+}
+
+td, th {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+}
+
+table {
+	border-width:1px;
+	border-style:solid;
+	border-color:#000;
+}
+
+tr {
+	border-width:1px;
+	border-style:solid;
+	border-color:#000;	
+}
+
+
 /* old styling */
 
 
