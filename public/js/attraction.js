@@ -135,7 +135,7 @@ $('#viz6switch').on('click',function(d){
 	$('#viz6').toggle();
 	$('#viz6few').toggle();
 });
-
+/*
 sticky = false
 $(window).scroll(function(){
     if(!sticky){
@@ -161,7 +161,7 @@ $(window).scroll(function(){
         }
     }
 });
-
+*/
 $('.proportional').each(function() {
 	let width = $(this).width();
     $(this).height(width);
